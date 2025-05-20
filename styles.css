@@ -23,6 +23,14 @@ body{
     z-index:10 ;
 }
 
+.buttons{
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
 .hero-content {
     padding: 20px;
 }
@@ -74,7 +82,7 @@ body{
 
 .scroll-btn, .private-btn {
     display: inline-block;
-    margin: 10px;
+    margin: 0;
     padding: 10px 20px;
     background: #ff6f91;
     color: #fff;
@@ -419,13 +427,18 @@ body{
 }
 
 .name-input {
-    max-width: 600px;
-    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
     background: #fef6f8;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    
 }
 
 .name-input input {
@@ -528,14 +541,18 @@ body{
     display: none;
 }
 #admin-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    flex-wrap: wrap;
     margin-top: 20px;
     padding: 15px;
     background: #fff;
     border: 2px solid #ffafbd;
     border-radius: 5px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  
 }
 
 #admin-panel h3 {
@@ -559,6 +576,7 @@ body{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 15px;
     font-size: 1rem;
 }
 
@@ -579,15 +597,28 @@ body{
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background: #ffafbd;
     color: #fff;
-    margin: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
     font-size: 1rem;
 }
 
+footer p{
+    margin: 0;
+}
+
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
+    footer{
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
     }

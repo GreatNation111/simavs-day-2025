@@ -36,12 +36,12 @@
     
     
     <!-- Password Prompt (Hidden by Default) -->
-    <div id="password-prompt" class="password-prompt">
+    <div id="password-prompt" class="password-prompt" style="display: none;">
         <div class="password-content">
             <h2>Enter Our Secret Password</h2>
             <p>Only you and I know this one! 😘</p>
             <input type="password" id="password-input" placeholder="Type the password...">
-            <button onclick="checkPassword()">Unlock 💖</button>
+            <button id="unlock-btn" onclick="checkPassword()">Unlock 💖</button>
             <p id="error-message" class="error-message"></p>
         </div>
     </div>

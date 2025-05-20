@@ -89,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const prompt = document.getElementById('password-prompt');
 
     if (passwordInput && unlockBtn && prompt) {
-        // Unlock with Enter key
         passwordInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 e.preventDefault();
@@ -97,9 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Dismiss prompt on click outside
         prompt.addEventListener('click', (e) => {
-            if (e.target === prompt) {
+            if (e.target === prompt || e.target.id === 'password-prompt') {
                 prompt.style.display = 'none';
                 console.log('Password prompt dismissed.');
             }
